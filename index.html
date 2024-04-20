@@ -7,23 +7,53 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="asset/carepy_logo-1.svg" alt="">
-            <ul>
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#portfolio-loc">Portfolio</a></li>
-                <li><a href="#contact-loc">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+               
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
         </nav>
         <div class="landing">
-            <div class="intro">
-                <h3>Hey, This is <Span>Ganesh v Hegde</Span><br>Student and Developer</h3>
-                <button>Contact Me</button>
+              <!-- main banner -->
+    <section class="bgimage" id="home">
+    
+        <div class="container-fluid">
+            <div class="row">
+            <div class="hero-text">
+                <h2 class="hero_title">Hey<br>I'm Ganesh</h2>
             </div>
+            </div>
+        </div>
+    </section>
             <div class="socials">
                 <div class="line"></div>
                 <i class="ri-facebook-circle-fill"></i>
@@ -33,179 +63,151 @@
             </div>
         </div>
     </header>
-    <section class="about">
-        <h1>About</h1>
+    <section class="about" id="about">
+        <h1>About me</h1>
         <div class="description">
             <div class="line"></div>
-            <p>I am pursuing BTech in Computer Science and Technology with a specialization in Cloud Computing and DevOps from Presidency University, Bangalore. I am also a full stack Web Developer. I have acquired all the skills necessary to be a Web Developer. I have got my internship trainings from Internshala and Devtown. I have also worked as an Web Developer intern and created many web projects.</p>
+            <p>I am pursuing BTech in Computer Science and Technology with a specialization in  DevOps from Presidency University, Bengaluru. I am also a full stack Web Developer. I have acquired skills necessary to be a Web Developer. I have my trainings from Devtown. </p>
         </div>
     </section>
-    <section class="skills">
-        <h1>My Skills</h1>
-        <div class="cards">
+    <section id="skills">
+        <h1>Tech Stack</h1>
+        <div class="webdev">
+
+            <h2 class="wd">Web Development</h2> 
+
+            <div class="cards">
+
             <div class="skill-card">
-                <img src="asset/python.svg" alt="">
-                <h2>Python</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/amazon-web-services.svg" alt="">
-                <h2>AWS</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/css.svg" alt="">
-                <h2>CSS</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/django.svg" alt="">
-                <h2>Django</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/flask.svg" alt="">
-                <h2>Flask</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/flutter.svg" alt="">
-                <h2>Flutter</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/git.svg" alt="">
-                <h2>GIT</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/html.svg" alt="">
+                <img src="images/html.svg" alt="">
                 <h2>HTML</h2>
             </div>
+
             <div class="skill-card">
-                <img src="asset/js.svg" alt="">
+                <img src="images/css.svg" alt="">
+                <h2>CSS</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/js.svg" alt="">
                 <h2>JavaScript</h2>
             </div>
+
             <div class="skill-card">
-                <img src="asset/linux-96.png" alt="">
-                <h2>Linux</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/mongodb.svg" alt="">
-                <h2>MongoDB</h2>
-            </div>
-            <div class="skill-card">
-                <img src="asset/mysql.svg" alt="">
+                <img src="images/mysql.svg" alt="">
                 <h2>MySQL</h2>
             </div>
+
             <div class="skill-card">
-                <img src="asset/nodejs.svg" alt="">
+                <img src="images/nodejs.svg" alt="">
                 <h2>NodeJS</h2>
             </div>
+
             <div class="skill-card">
-                <img src="asset/react.svg" alt="">
+                <img src="images/react.svg" alt="">
                 <h2>ReactJS</h2>
             </div>
         </div>
-    </section>
-    <section class="portfolio" id="portfolio-loc">
-        <h1>Portfolio</h1>
-        <div class="portfolio-cards">
-            <div class="portfolio-card">
-                <img src="asset/images/aperture-vintage-HF1IO60tQdc-unsplash.jpg" alt="">
-                <div class="overlay">
-                    <h3>Amazon Scrapper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-                    <button>See More -></button>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <img src="asset/images/martin-martz-3_x1FRGAEwY-unsplash.jpg" alt="">
-                <div class="overlay">
-                    <h3>Facebook Scrapper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-                    <button>See More -></button>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <img src="asset/images/vimal-s-bVplevb7Bhk-unsplash.jpg" alt="">
-                <div class="overlay">
-                    <h3>Google Scrapper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-                    <button>See More -></button>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <img src="asset/images/warren-umoh-K7M7dQO-HrA-unsplash.jpg" alt="">
-                <div class="overlay">
-                    <h3>Twitter Scrapper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-                    <button>See More -></button>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <img src="asset/images/warren-umoh-pnMjGMOs2Xw-unsplash.jpg" alt="">
-                <div class="overlay">
-                    <h3>LinkedIn Scrapper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-                    <button>See More -></button>
-                </div>
-            </div>
-            <div class="portfolio-card">
-                <img src="asset/images/warren-umoh-VL12rhr4mi0-unsplash.jpg" alt="">
-                <div class="overlay">
-                    <h3>YouTube Scrapper</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laudantium!</p>
-                    <button>See More -></button>
-                </div>
-            </div>
+
         </div>
-        <Button>View More</Button>
-    </section>
-    <section class="experience">
-        <div class="darker-div"></div>
-        <h1>Experience</h1>
-        <div class="lighter-div">
-            <div class="exp">
-                <h2>Senior Python Developer</h2>
-                <div class="exp-desc">
-                    <h3>Scottech, Toledo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?</p>
-                </div>
+
+        <div class="devops"> 
+
+            <h2 class="wd">DevOps</h2> 
+
+            <div class="cards">
+
+            <div class="skill-card">
+                <img src="images/git.svg" alt="">
+                <h2>GIT</h2>
             </div>
-            <div class="exp">
-                <h2>Senior Python Developer</h2>
-                <div class="exp-desc">
-                    <h3>Scottech, Toledo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat! Mollitia nostrum,
-                        dolor repellat deleniti officiis voluptatem quas labore cupiditate iure ullam doloribus aliquam
-                        voluptates. Ratione earum reprehenderit iure, esse assumenda minima vero delectus consequuntur.
-                        Laborum eligendi nisi, doloremque, ab sint id enim in vel molestias, nihil vero suscipit a?</p>
-                </div>
+
+            <div class="skill-card">
+                <img src="images/docker-svgrepo-com.svg" alt="">
+                <h2>Docker</h2>
             </div>
+
+            <div class="skill-card">
+                <img src="images/jenkins-svgrepo-com.svg" alt="">
+                <h2>Jenkins</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/amazon-web-services.svg" alt="">
+                <h2>AWS</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/kubernetes-svgrepo-com.svg" alt="">
+                <h2>Kubernetes</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/sonarqube-svgrepo-com.svg" alt="">
+                <h2>SonarQube</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/ansible-svgrepo-com.svg" alt="">
+                <h2>Ansible</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/grafana-svgrepo-com.svg" alt="">
+                <h2>Grafana</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/linux-96.png" alt="">
+                <h2>Linux</h2>
+            </div>
+
+            <div class="skill-card">
+                <img src="images/python.svg" alt="">
+                <h2>Python</h2>
+            </div>
+
         </div>
+
+        </div>
+
+
+    
     </section>
-    <section class="contact-me" id="contact-loc">
-        <h1>Contact Me</h1>
-        <div class="contact">
-            <div class="contact-card">
-                <i class="ri-message-3-line"></i>
-                <p>work.devalphaspace.com</p>
-            </div>
-            <div class="contact-card">
-                <i class="ri-phone-line"></i>
-                <p>0123456789</p>
-            </div>
-            <div class="contact-card">
-                <i class="ri-map-pin-3-line"></i>
-                <p>Tripura, India</p>
+    
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+        
+                        <div class="card servicesText">
+                            <div class="card-body1">
+                                <div class="social-icons mt-4">
+                                    <a href="https://github.com/Ganesh562003" target="_blank"><i class="fab ri-github-fill"></i></a>
+                
+                                    <a href="https://linkedin.com/in/ganesh-hegde-btech-devops" target="_blank"><i class="fab ri-linkedin-fill"></i></a>
+                                    <a href="mailto:ganeshhegde289@gmail.com" target="_blank"><img src="images/mail.png" width="40" height="40" class="fab ri-envelope-fill" style="margin-top: 0px;padding:0px;"></a>
+                                </div>
+                                
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="nametag">
+                <p>Created By Ganesh <3</p>
+                
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
