@@ -14,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #34353b;
+  background-color: #0D0B18;
 }
 
 header {
@@ -67,69 +67,7 @@ header nav ul li .active {
 }
 
 
-.landing {
-  display: flex;
-  height: 90vh;
-  background-color: transparent;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
 
-.landing .intro {
-  display: flex;
-  flex-direction: column;
-}
-
-.landing .intro h3 {
-  color: #fbfbfb;
-  font-weight: 400;
-  font-size: 32px;
-  margin-left: 10vw;
-}
-
-.landing .intro h3 span {
-  color: #fec86a;
-  font-weight: 600;
-  font-size: 3.5rem;
-}
-
-.intro button {
-  height: 48px;
-  width: 144px;
-  margin-top: 2.5vh;
-  margin-left: 10vw;
-  background-color: transparent;
-  border: 2px solid #fec86a;
-  border-radius: 8px;
-  color: #fec86a;
-  font-size: 16px;
-  transition: all ease 0.5s;
-}
-
-.intro button:hover {
-  background-color: #fec86a;
-  color: #34353b;
-}
-
-.socials {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  margin-top: 50vh;
-}
-
-.socials .line {
-  background-color: #fec86a;
-  height: 15vh;
-  width: 2.5px;
-}
-
-.socials i {
-  color: #fbfbfb;
-  font-size: 36px;
-}
 
 .about {
   height: 50vh;
@@ -153,7 +91,7 @@ header nav ul li .active {
 
 .about .description .line {
   height: 2.5px;
-  width: 400px;
+  width: 600px;
   background-color: #fec86a;
   margin-right: 32px;
 }
@@ -256,6 +194,93 @@ header nav ul li .active {
   justify-content: center;
   gap: 2.5vh;
   transition: all ease 0.5s;
+}
+.wd {
+  text-align: left;
+  color: #fff;
+  font-size:xx-large;
+  margin-left: 10%;
+}
+#skills h1 {
+    
+  color: #fbfbfb;
+  font-size:50px;
+  text-align: center;
+}
+
+
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+  
+}
+.ri-facebook:hover,.ri-instagram:hover,.ri-twitter:hover,.ri-linkedin:hover, .ri-twitch:hover, .ri-github:hover, .ri-envelope:hover {
+  color:gray;
+}
+.fab {
+  color: aliceblue;
+}
+.card-body1{
+    
+  background:#202022;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 200px;
+  width:auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+  border: 5px solid gray;
+}
+.text-center {
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+}
+#contact {
+  padding-bottom: 4rem;
+}
+/* hero background image */
+.bgimage {
+  height:100vh;
+  background-image:url("images/try1.jpeg");
+  background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:auto;
+    background-color: #0D0B18;
+    
+}
+
+
+/* text css above hero image*/
+.hero_title {
+  font-size: 4.5rem;
+  text-align: left;
+}
+
+.hero-text {
+  text-align:left;
+  color: white;
+  padding-top: 300px;
+  
+}
+/* footer styling */
+#footer {
+  
+  color: white;
+  text-align: center;
+  border:10px ;
+  font-size: small;
+  
 }
 
 .portfolio-card img {
