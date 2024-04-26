@@ -68,8 +68,8 @@ header nav ul li .active {
 .about {
   height: 50vh;
   width: 100vw;
-  padding: 100px;
-  margin-bottom: auto;
+  padding-top: 50px;
+  
   position: relative;
 }
 
@@ -91,12 +91,7 @@ header nav ul li .active {
   background-color: #fec86a;
   margin-right: 5px;
 }
-.line {
-  height: 2.5px;
-  width: 300px;
-  background-color: #fec86a;
-  margin-right: 5px;
-}
+
 
 .about .description p {
   color: #fbfbfb;
@@ -152,8 +147,9 @@ header nav ul li .active {
     color: white;
     height: 100%;
     display: flex;
-    justify-content: left;
-    align-items: start;
+    justify-content:left;
+    align-items: center;
+    
 }
 .card-body1{
     
@@ -178,12 +174,18 @@ header nav ul li .active {
 
 
 #skills {
-  margin-top: auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 50px 75px;
+}
+.line1 {
+  height: 2.5px;
+  width: 300px;
+  background-color: #fec86a;
+  margin-right: 5px;
 }
 
 #skills h1 {
