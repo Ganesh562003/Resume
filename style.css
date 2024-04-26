@@ -101,6 +101,7 @@ header nav ul li .active {
 .about .description p {
   color: #fbfbfb;
   font-size: 20px;
+  
 }
 
 .about .description span {
@@ -204,8 +205,8 @@ header nav ul li .active {
 }
 
 .skill-card {
-  height: 20vw;
-  width: 20vw;
+  height: 150px;
+  width: 150px;
   background-color: #3d3e42;
   border-radius: 20px;
   display: flex;
@@ -228,7 +229,7 @@ header nav ul li .active {
 }
 
 .skill-card h2 {
-  font-size: 24px;
+  font-size: medium;
   font-weight: 400;
   color: #fbfbfb;
 }
