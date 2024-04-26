@@ -14,16 +14,20 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #0D0B18;
+  background-image: linear-gradient(315deg, #000000 0%, #0C0B1B 74%);
 }
 
 header {
   height: 100vh;
   padding: 36px 100px;
   background-position: right;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
+  background-color: #0D0B18;
+}
+.navbarScroll.navbarDark {
+  background: rgba(0, 0, 0, 0.252);
 }
 
 header nav {
@@ -93,7 +97,13 @@ header nav ul li .active {
   height: 2.5px;
   width: 600px;
   background-color: #fec86a;
-  margin-right: 32px;
+  margin-right: 5px;
+}
+.line {
+  height: 2.5px;
+  width: 300px;
+  background-color: #fec86a;
+  margin-right: 5px;
 }
 
 .about .description p {
@@ -101,24 +111,94 @@ header nav ul li .active {
   font-size: 20px;
 }
 
-.about .description p span {
+.about .description span {
   color: #fec86a;
 }
+@media only screen and (max-width: 600px) {
+  .about .description p {
+    margin: 5%;
+    color: #fbfbfb;
+    font-size: 20px;
+  }
+  
+  
+  #skills h1 {
+    margin-top:200px;
+    font-size: 56px;
+    font-weight: 700;
+    color: #fbfbfb;
+    font-family: "Libre Baskerville", serif;
+    padding: 50px 75px;
+  }
+  
+/* hero background image */
+.bgimage {
+  height:100%;
+  width:100%;
+  background-image:url("images/try1.jpeg");
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #0D0B18;
+  background-size: 100% 100%;
+}
 
-.skills {
+
+
+/* text css above hero image*/
+.hero_title{
+  font-size: 50px;
+  width: 45%;
+  background-color: rgba(41, 40, 40, 0.1);
+  border-radius: 10px;
+  position: absolute;
+  padding: 18px;
+}
+.hero-text {
+  width: 50%;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.card-body1{
+    
+  background:#202022;
+  
+  border-radius: 20px;
+  height: 100px;
+  width:auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+  border: 5px solid gray;
+}
+
+}
+
+
+
+#skills {
   margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 100px;
+  padding: 50px 75px;
 }
 
-.skills h1 {
+#skills h1 {
   font-size: 56px;
   font-weight: 700;
   color: #fbfbfb;
   font-family: "Libre Baskerville", serif;
+  padding: 50px 75px;
 }
 
 .cards {
@@ -201,11 +281,15 @@ header nav ul li .active {
   font-size:xx-large;
   margin-left: 10%;
 }
+.devops{
+  margin-top: 70px;
+}
 #skills h1 {
     
   color: #fbfbfb;
   font-size:50px;
   text-align: center;
+  padding: 50px 100px;
 }
 
 
@@ -215,9 +299,9 @@ header nav ul li .active {
   cursor: pointer;
   
 }
-.ri-facebook:hover,.ri-instagram:hover,.ri-twitter:hover,.ri-linkedin:hover, .ri-twitch:hover, .ri-github:hover, .ri-envelope:hover {
+.fab:hover {
   color:gray;
-}
+} 
 .fab {
   color: aliceblue;
 }
@@ -226,6 +310,7 @@ header nav ul li .active {
   background:#202022;
   margin-left: 150px;
   margin-right: 150px;
+  border-radius: 20px;
   height: 200px;
   width:auto;
   text-align: center;
@@ -238,12 +323,12 @@ header nav ul li .active {
   transition: all ease 0.5s;
   border: 5px solid gray;
 }
-.text-center {
+.text-center1 {
   color: white;
   margin-top: 100px;
   margin-bottom: 50px;
-  text-align: center;
-  font-size: 50px;
+  text-align: start;
+  font-size: 30px;
 }
 #contact {
   padding-bottom: 4rem;
@@ -265,14 +350,20 @@ header nav ul li .active {
 .hero_title {
   font-size: 4.5rem;
   text-align: left;
+  
 }
 
 .hero-text {
   text-align:left;
   color: white;
   padding-top: 300px;
+  width: 50%;
+  height: 5%;
+  border-radius: 10px;
   
 }
+
+
 /* footer styling */
 #footer {
   
